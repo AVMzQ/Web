@@ -1,0 +1,43 @@
+nav{
+    font-size: 25px;
+}
+img.icono{
+    max-width: 10%;
+}
+a.titulo{ 
+    margin: 0 35%;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.25em;
+    font-size: 80px; 
+    font-style:normal;
+    text-decoration:initial;
+    text-transform:unset;
+    text-shadow: 5px 2.5px burlywood;
+}
+h1.inicio{
+    margin: 0 25%;
+    font-size: 50px;
+    color: rgb(255, 154, 154);
+}
+img{
+    width: 100%;
+}
+h2.fin{
+    margin: 0 35%;
+    font-size: 50px;
+    color: rgb(250, 156, 171);
+    text-decoration: overline;
+    text-transform:unset;
+    text-shadow: 2px 2px rgb(255, 79, 109);
+}
+footer{
+
+    line-height: 1.5em;
+    font-size: 25px;
+    margin: 0 100px;
+}
+p.footer{
+    font-size: 50px;
+    text-transform:unset;
+    text-shadow: 5px 2.5px burlywood;
+}

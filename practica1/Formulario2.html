@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keyword" content="Furmulario,html 5">
+        <meta name="description" content="Elaboracion del segundo formulario">
+        <title>Fomrulario II</title>
+        <body>
+            <h1>Formulario II</h1>
+            <hr>
+            <form method="POST">
+                <fieldset>
+                    <legend>Registro de alumno</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text"name="nombre",placeholder="Escribe tu nombre"> <br>
+                    <label for="fNacimiento">Fecha de nacimiento:</label>
+                    <input type="date",name="fNacimiento"> <br>
+                    <label for="usuario">usuario:</label>
+                    <input type="text" name="usuario" placeholder="Escribe tu usuario"><br>
+                    <label for="Contrasena">Contrasena</label>
+                    <input type="password",name="Contrasena",placeholder="Escribe tu contrasena"> <br>
+                    <label for="foto">Foto:</label>
+                    <input type="file",name="foto"><br>
+                    <label for="ciudadnat">Ciudad natal:</label>
+                    <select name="ciudadnat">
+                        <option selected value="TOR">Torreon</option>
+                        <option selected value="LER">Lerdo</option>
+                        <option selected value="GomP">Gomez Palacio</option>
+                    </select> <br>
+                    <input type="submit",name="guardarAlumno",value="Guardar">
+                </fieldset>
+            </form>
+        </body>
+    </head>
+</html>

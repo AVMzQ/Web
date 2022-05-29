@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="buscarApp">
+    <head>
+        <meta charset="upt-8">
+        <title>Visor de GitHub</title>
+        <script src="js/angular.js"></script>
+    </head>
+    <body ng-controller="buscadorController">
+        <h1>{{mensaje}}</h1>
+        <hr>
+        <form ng-submit="buscar(username)">
+            <input ng-model="username" type="text" placeholder="Usuario Github">
+            <button type="submit">Buscar</button>
+        </form>
+        <p>{{usuario.error}}</p>
+        <p>{{usuario.name}}</p>
+        <p>{{usuario.location}}</p>
+        <p><img ng-src="{{usuario.avatar_url}}"></p>
+
+        <script src="js/buscador.js"></script>
+    </body>
+</html>

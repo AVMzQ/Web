@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Galeria, Cafe,MiCafe,Micafe,micafe">
+        <meta name="description" content="Muestra de instalacion de MiCafe">
+        <link rel="stylesheet" href="cssProyecto/Estilo.css" type="text/css">
+        <link rel=stylesheet href="cssProyecto/Galeria.css" type="text/css">
+        <title>MiCafe Galeria</title>
+
+        <!--bootstarp-->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    </head>
+    
+    <body>
+      <a class="titulo">MiCafe</a>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="Image/cafeteria.png" alt="" width="60" height="50" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  <a class="nav-link" href="Menu.html">Menu</a>
+                  <a class="nav-link" href="Info.html">Informacion</a>
+                  <a class="nav-link" href="Galeria.html">galeria</a>
+                </div>
+          </div>
+        </nav>
+      </div>
+        <h1 class=GaleH1>Vienes a echar un ojo?</h1>
+        <hr>
+        <div class="container">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Image/ima3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Image/ima4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Image/ima6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Image/ima7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+            
+      </div>
+        <hr><br>
+        <div class=container>
+          <h2 class="comentario">Comentarios</h2>
+          <form method="post">
+            <div class=from-group>
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id=nombre aria-describedby="nombreHelp">
+              <small id=nombreHelp class="form-text text-muted"></small>
+            </div>
+            <div class="from-group">
+              <label for="Email">Email</label>
+              <input type="email" class="form-control" id="email" name="email">
+              <small id=emailHelp class="form-text text-muted"></small>
+            </div>
+            <div class="from-group">
+              <label for="Comentarios">Comentarios</label>
+              <br>
+              <small id=ComentariosHelp class="form-text text-muted"></small>
+              <textarea class="form-control" id="comentarios" name="comentarios"rows=3></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+            <button type="button" class="btn btn-primary" onclick="validar()">Comentar</button>
+            </div>
+          </form>
+        </div>
+
+      <script type="text/javascript">
+        function validar()
+        {
+          //alert("Funciona!");
+          var nombre=document.getElementById('nombre').value;
+          if(nombre.length)
+          { document.getElementById('nombreHelp').textContent=""}
+          else
+          {document.getElementById('nombreHelp').textContent="Error: Ingresa tu nombre"}
+
+          var Email=document.getElementById('email').value;
+          if(Email.length)
+          { document.getElementById('emailHelp').textContent=""}
+          else
+          {document.getElementById('emailHelp').textContent="Error: Ingresa tu Email"}
+
+          var Comentarios=document.getElementById('comentarios').value;
+          if(Email.length)
+          { document.getElementById('ComentariosHelp').textContent=""}
+          else
+          {document.getElementById('ComentariosHelp').textContent="No has escrito tu comentario!!"}
+        }
+      </script>
+      <hr>
+      <br>
+      <br><br><br><br><br><br><br>
+      
+    </body>
+
+    <footer>
+        <div>
+            <p class="footer"> Redes sociales:</p> 
+            <ul>
+                <li><a target="_blank" href="http://www.facebook.com">Facebook</a></li>
+                <li><a target="_blank" href="http://www.twitter.com">twitter</a></li>
+                <li><a target="_blank" href="http://www.instagram.com">instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</html>

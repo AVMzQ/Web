@@ -1,0 +1,20 @@
+[
+    {
+        "tipo": "Versa",
+        "marca":"Nissan",
+        "color":"rojo",
+        "transmision":"manual"
+    },
+    {
+        "tipo": "sentra",
+        "marca":"Nissan",
+        "color":"rojo",
+        "transmision":"manual"
+    },
+    {
+        "tipo": "Aveo",
+        "marca":"chevrolet",
+        "color":"rojo",
+        "transmision":"manual"
+    }
+]
